@@ -1,9 +1,11 @@
-:root  {
-  --sidebar-color: #212121;
-  --header-color: #0d7377;
+:root {
+  --header-color: #212121;
+  --sidebar-color: #0d7377;
   --main-color: #323232;
   --accent-color: #14ffec;
+  --icon-color: white;
 }
+
 body,
 html {
   margin: 0;
@@ -23,28 +25,31 @@ html {
   grid-column-end: 1;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-color: blue;
+  background-color: var(--sidebar-color);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.5fr repeat(5, 1fr) 1.5fr repeat(4, 1fr) 7fr;
   gap: 0px;
+  color: var(--icon-color);
 }
 
 .header {
   grid-column: 2 / 2;
   grid-row: 1 / 1;
-  background-color: aqua;
+  background-color: var(--header-color);
   display: grid;
   grid-template-columns: 1fr 5fr 1fr 1fr 3fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 10px;
   column-gap: 5px;
+  color: var(--icon-color);
 }
 
 .main-content {
   grid-column: 2 / 2;
   grid-row: 2 / 3;
-  background-color: beige;
+  background-color: var(--main-color);
+  color: var(--icon-color);
 }
 
 .main-content {
@@ -60,6 +65,10 @@ html {
   padding-left: 10px;
   padding-top: 10px;
   gap: 10px;
+}
+
+img[src$=".svg"] {
+  filter: brightness(0) invert(1);
 }
 
 .project-card-holder {
