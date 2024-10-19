@@ -99,7 +99,7 @@ html {
 
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 0.5fr 3fr 1fr 3fr; /* Adjust this line */
+  grid-template-rows: 0.1fr 3fr 0.1fr 3fr; /* Adjust this line */
   gap: 20px;
 }
 
@@ -210,8 +210,13 @@ html {
   border-radius: 10px;
 }
 
-.anouncement {
+.anouncement-1 {
   border-bottom: 1px solid black;
+}
+
+.anouncement {
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .anouncement > h3,
