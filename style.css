@@ -1,3 +1,9 @@
+:root  {
+  --sidebar-color: #212121;
+  --header-color: #0d7377;
+  --main-color: #323232;
+  --accent-color: #14ffec;
+}
 body,
 html {
   margin: 0;
@@ -45,6 +51,15 @@ html {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+.sidebar-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 10px;
+  padding-top: 10px;
+  gap: 10px;
 }
 
 .project-card-holder {
