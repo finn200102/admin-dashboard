@@ -52,6 +52,7 @@ html {
 .header > button {
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 20px;
   height: 50%;
   border: none;
   border-radius: 50px;
@@ -167,12 +168,28 @@ html {
   grid-row: 3 / 4;
 }
 
-.anouncement-holder {
+.anouncement-rows-holder {
   grid-column: 2 / 3;
-  grid-row: 1 / 1;
+  grid-row: 1 / 2;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr repeat(3, 3fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: white;
+
+  margin: 10px;
+  margin-right: 30px;
+
+  border-radius: 10px;
+}
+
+.anouncement {
+  border-bottom: 1px solid black;
+}
+
+.anouncement > h3,
+.anouncement > div > p {
+  padding-left: 10px;
+  color: black;
 }
 
 .trending-holder {
@@ -185,6 +202,12 @@ html {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
   row-gap: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .trending-user {
@@ -193,6 +216,7 @@ html {
   grid-template-rows: repeat(2, 1fr);
   row-gap: 10px;
   column-gap: 10px;
+  margin-left: 10px;
 }
 
 .trending-user > img {
@@ -205,6 +229,7 @@ html {
   grid-row: 1/2;
   padding: 0;
   margin: 0;
+  color: black;
 }
 
 .trending-user > p {
@@ -212,4 +237,5 @@ html {
   grid-row: 2/3;
   padding: 0;
   margin: 0;
+  color: black;
 }
